@@ -35,12 +35,11 @@ for t in range(T):
             continue
 
         if battery == 0 and bus_stations[i] == 0:
-            print("목적지에 도착하지 못했습니다.")
-
+            battery_refill_cnt = 0
             break
 
     #print(t)
-    print(t, battery_refill_cnt)
-    battery_refill_cnt = 0
+    print(t+1, battery_refill_cnt)
+
 
 
